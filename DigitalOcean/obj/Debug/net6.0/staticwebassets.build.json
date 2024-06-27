@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "gNU0D2VjOkH7Jqd9JVCLfJw+XVCiyYx1JdR5dQt3LDU=",
+  "Source": "DigitalOcean",
+  "BasePath": "_content/DigitalOcean",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
