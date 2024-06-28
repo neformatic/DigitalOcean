@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Projects\\DigitalOcean\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1CDF348D-1455-4C95-9CE0-1861EA4CA71F}|DigitalOcean\\DigitalOcean.csproj|d:\\projects\\digitalocean\\digitalocean\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1CDF348D-1455-4C95-9CE0-1861EA4CA71F}|DigitalOcean\\DigitalOcean.csproj|solutionrelative:digitalocean\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1CDF348D-1455-4C95-9CE0-1861EA4CA71F}|DigitalOcean\\DigitalOcean.csproj|d:\\projects\\digitalocean\\digitalocean\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1CDF348D-1455-4C95-9CE0-1861EA4CA71F}|DigitalOcean\\DigitalOcean.csproj|solutionrelative:digitalocean\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -71,6 +75,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\Projects\\DigitalOcean\\DigitalOcean\\Dockerfile",
+              "RelativeDocumentMoniker": "DigitalOcean\\Dockerfile",
+              "ToolTip": "D:\\Projects\\DigitalOcean\\DigitalOcean\\Dockerfile",
+              "RelativeToolTip": "DigitalOcean\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-28T12:44:48.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Projects\\DigitalOcean\\DigitalOcean\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "DigitalOcean\\Properties\\launchSettings.json",
@@ -83,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Projects\\DigitalOcean\\DigitalOcean\\Program.cs",
               "RelativeDocumentMoniker": "DigitalOcean\\Program.cs",
