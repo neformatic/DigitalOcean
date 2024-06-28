@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DigitalOcean")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a7a1fc4413012a8302b99c63d14e785f7bf718d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fddc97b69280146407968f13b99bd4ec33da243")]
 [assembly: System.Reflection.AssemblyProductAttribute("DigitalOcean")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DigitalOcean")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
