@@ -8,10 +8,10 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["DigitalOcean/DigitalOcean.csproj", "DigitalOcean/"]
-RUN dotnet restore "./DigitalOcean/DigitalOcean.csproj"
+COPY ["./DigitalOcean.csproj", "./"]
+RUN dotnet restore "./DigitalOcean.csproj"
 COPY . .
-WORKDIR "/src/DigitalOcean"
+WORKDIR "./"
 RUN dotnet build "./DigitalOcean.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
