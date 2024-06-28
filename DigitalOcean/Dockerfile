@@ -10,7 +10,7 @@ WORKDIR /src
 COPY ["DigitalOcean/DigitalOcean.csproj", "./"]
 RUN dotnet restore "./DigitalOcean.csproj"
 COPY ./DigitalOcean/ .
-WORKDIR "./"
+WORKDIR "./DigitalOcean"
 RUN dotnet build "DigitalOcean/DigitalOcean.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
