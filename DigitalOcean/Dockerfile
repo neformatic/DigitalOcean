@@ -11,11 +11,11 @@ COPY ["DigitalOcean/DigitalOcean.csproj", "./"]
 RUN dotnet restore "./DigitalOcean.csproj"
 COPY ./DigitalOcean/ .
 WORKDIR "./"
-RUN dotnet build "./DigitalOcean.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "DigitalOcean/DigitalOcean.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Debug
-RUN dotnet publish "./DigitalOcean.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "DigitalOcean/DigitalOcean.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
