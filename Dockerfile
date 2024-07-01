@@ -7,9 +7,10 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 ARG BUILD_CONFIGURATION=Debug
 WORKDIR /src
+COPY ["DigitalOcean/DigitalOcean.csproj", .]
 COPY ["DigitalOcean/DigitalOcean.csproj", "DigitalOcean/"]
+COPY ["DigitalOcean/", "DigitalOcean/"]
 WORKDIR "/src/DigitalOcean/"
-COPY . .
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Debug
