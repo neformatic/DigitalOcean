@@ -8,9 +8,8 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 ARG BUILD_CONFIGURATION=Debug
 WORKDIR /src
 COPY ["DigitalOcean/DigitalOcean.csproj", "DigitalOcean/"]
-CD "DigitalOcean/"
+WORKDIR "/src/DigitalOcean/"
 COPY . .
-WORKDIR "/src/DigitalOcean"
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Debug
