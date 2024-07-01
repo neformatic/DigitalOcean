@@ -367,3 +367,4 @@ FodyWeavers.xsd
 
 # config folder
 .config/
+/.vs/DigitalOcean/v17/.suo
