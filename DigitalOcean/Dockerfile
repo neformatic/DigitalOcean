@@ -3,18 +3,20 @@
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
 EXPOSE 80
+EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
-ARG BUILD_CONFIGURATION=Debug
+ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["DigitalOcean/DigitalOcean.csproj", "./"]
 COPY ["DigitalOcean/DigitalOcean.csproj", "DigitalOcean/"]
-COPY ["DigitalOcean/", "DigitalOcean/"]
-WORKDIR "/src/DigitalOcean/"
+RUN dotnet restore "./DigitalOcean/DigitalOcean.csproj"
+COPY . .
+WORKDIR "/src/DigitalOcean"
+RUN dotnet build "./DigitalOcean.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
-ARG BUILD_CONFIGURATION=Debug
-RUN dotnet publish "DigitalOcean.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "./DigitalOcean.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
