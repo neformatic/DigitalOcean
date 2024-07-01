@@ -7,8 +7,8 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 ARG BUILD_CONFIGURATION=Debug
 WORKDIR /src
-COPY ["DigitalOcean/DigitalOcean.csproj", "DigitalOcean/"]
-RUN dotnet restore "DigitalOcean/DigitalOcean.csproj"
+COPY ["DigitalOcean/DigitalOcean.csproj", "./"]
+RUN dotnet restore "DigitalOcean.csproj"
 COPY . .
 WORKDIR "/src/DigitalOcean"
 RUN dotnet build "DigitalOcean.csproj" -c $BUILD_CONFIGURATION -o /app/build
